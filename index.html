@@ -9,90 +9,14 @@
  </head>
  <body>
   <header>
-  <!--  add dark nav  -->
-  <nav class="nav">
-    <div class="container">
-      <div class="nav-heading">
-        <button class="toggle-nav" data-toggle="open-navbar1"><i class="fa fa-align-right"></i></button>
-        <a class="brand" href="#">Digital Trotters - Lisbonne</a>
-      </div>
-      <div class="menu" id="open-navbar1">
-        <ul class="list">
-          <li><a href="#">Home</a></li>
-          <li class="categories"><a href="#" id="open-categories" data-dropdown="target" href="#">Categories <i class="fa fa-caret-down"></i></a>
-            <ul class="drop-down" id="target">
-              <li><a href="#">Actions</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="sub-drop-down"><a href="#">Another dropdown menu</a>
-                <ul class="sub-dropdown">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">One more</a></li>
-                  <li class="speprator"></li>
-                  <li><a href="#">Somthething else here</a></li>
-                </ul>
-              </li>
-              <li class="seprator"></li>
-              <li><a href="#">Seprated link</a></li>
-              <li class="seprator"></li>
-              <li><a href="#">One more seprated link.</a></li>
-            </ul>
-          </li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Testimonials</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
+  
 </header>
 
 <updatefy-widget widget-uuid="8427d86d-aa06-463e-b201-2e8d07f13d73"></updatefy-widget>
    <script type="text/javascript" src="https://updatefy.co/widget.js"></script>
   <script>
-  /*global $, console*/
-$(function () {
-  'use strict';
-  
-  // Start navbar 
-  (function () {
-    
-    
-    // Add class active when the user clicks the lis of the menu
-    $('.nav .list li').on('click', 'a', function () {
-      $(this).parent().addClass('active').siblings().removeClass('active');
-    });
-    
-    
-    var openCategories = $('.nav #open-categories'),
-        categories = $('.drop-down');
-    
-    
-    // Toggle categories on clicking
-    openCategories.on('click', function () {
-      $("#" + $(this).data('dropdown')).toggleClass('show');
-      // When the user clicks the window if the categories is not the target, close it.
-      $(window).on('mouseup', function (e) {
-        if ( categories.hasClass('show')
-            && ! categories.is(e.target)
-            && categories.has(e.target).length === 0
-            && ! openCategories.is(e.target) ) {
-          categories.removeClass('show');
-        }
-      });
-    });
-    
-    
-    // Toggle menu, This will be shown in Extra small screens only
-    $('.nav .toggle-nav').on('click', function () {
-      $( "#" + $(this).data('toggle') ).slideToggle(300);
-    });
-    
-    
-  }());
-});
-  </script>
+
   
   
  </body>
