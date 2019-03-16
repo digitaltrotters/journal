@@ -3,38 +3,33 @@
  <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  <style>
-  
-  header{width:100%; display:table; background-color:#fde428; margin-bottom:50px;}
-#logo{float:left; font-size:24px; text-transform:uppercase; color:#002e5b; font-weight:600; padding:20px 0px;}
+  body {display: block; margin: 0px;}
+  header{font-family:'Arial';width:100%; display:table; background-color:#fff; margin-bottom:50px;   box-shadow: 0px 1px 10px #DCDCDC;}
+
+#logo{text-decoration:none;float:left; font-size:24px; text-transform:uppercase; color:#DC676C; font-weight:600; padding:15px 30px;}
 nav{width:auto; float:right;}
 nav ul{display:table; float:right;}
-nav ul li{float:left;}
+nav ul li{float:left;list-style-type:none;}
 nav ul li:last-child{padding-right:0px;}
-nav ul li a{color:#002e5b; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;}
-nav ul li a:hover{background-color:#002e5b; color:#fde428; transition: all 0.5s ease 0s;}
-nav ul li a:hover i{color:#fde428; transition: all 0.5s ease 0s;}
-nav ul li a i{padding-right:10px; color:#002e5b; transition: all 0.5s ease 0s;}
-
+nav ul li a{text-decoration:none;color:#DC676C; font-size:16px; padding: 5px 18px; display:inline-block; transition: all 0.5s ease 0s;}
+nav ul li a:hover{color:#000; transition: all 0.5s ease 0s;}
+nav ul li a:hover i{color:#000; transition: all 0.5s ease 0s;}
+nav ul li a i{padding:0px; color:#002e5b; transition: all 0.5s ease 0s;}
 .toggle-menu ul{display:table; width:25px;}
 .toggle-menu ul li{width:100%; height:3px; background-color:#002e5b; margin-bottom:4px;}
 .toggle-menu ul li:last-child{margin-bottom:0px;}
-
 input[type=checkbox], label{display:none;}
-
 .content{display:table; margin-bottom:60px; width:900px;}
 .content h2{font-size:18px; font-weight:500; color:#002e5b; border-bottom:1px solid #fde428; display:table; padding-bottom:10px; margin-bottom:10px;}
 .content p{font-size:14px; line-height:22px; color:#7c7c7c; text-align:justify;}
-
 footer{display:table; padding-bottom:30px; width:100%;}
 .social{margin:0px auto; display:table; display:table;}
 .social li{float:left; padding:0px 10px;}
 .social li a{color:#002e5b; transition: all 0.5s ease 0s;}
 .social li a:hover{color:#fde428; transition: all 0.5s ease 0s;}
-
 @media only screen and (max-width: 1440px) {
 section{max-width:95%;}
 }
-
 @media only screen and (max-width: 980px) {
 header{padding:20px 0px;}
 #logo{padding:0px;}
@@ -42,39 +37,33 @@ input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; backgroun
 input[type=checkbox]:fous{background:none;}
 label {float:right; padding:8px 0px; display:inline-block; cursor:pointer; }
 input[type=checkbox]:checked ~ nav {display:block;}
-
 nav{display:none; position:absolute; right:0px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
 nav ul{width:auto;}
 nav ul li{float:none; padding:0px; width:100%; display:table;}
 nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
 nav ul li a i{color:#fde428; padding-right:13px;}
 }
-
 @media only screen and (max-width: 980px) {
 .content{width:90%;}
 }
-
 @media only screen and (max-width: 568px) {
 h1{padding:25px 0px;}
 h1 span{display:block;}
 }
-
 @media only screen and (max-width: 480px) {
 section {max-width: 90%;}
 }
-
 @media only screen and (max-width: 360px) {
 h1{font-size:20px;}
 label{padding:5px 0px;}
 #logo{font-size: 20px;}
 nav{top:47px;}
 }
-
 @media only screen and (max-width: 320px) {
 h1 {padding: 20px 0px;}
 }
-  
-  
+
+
   </style>
 
 
@@ -82,31 +71,28 @@ h1 {padding: 20px 0px;}
  </head>
  <body>
   <header>
-  
+
 <section>
-<a href="https://www.linkedin.com/in/sutharmayur" id="logo" target="_blank">Mayur Suthar</a>
+<a href="#" id="logo" target="_blank">Digital Trotters - Lisbonne</a>
 
 <label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
 <input type="checkbox" id="toggle-1">
 
 <nav>
 <ul>
-<li><a href="#logo"><i class="icon-home"></i>Home</a></li>
-<li><a href="#about"><i class="icon-user"></i>About</a></li>
-<li><a href="#portfolio"><i class="icon-thumbs-up-alt"></i>Portfolio</a></li>
-<li><a href="#services"><i class="icon-gear"></i>Services</a></li>
-<li><a href="#gallery"><i class="icon-picture"></i>Gallery</a></li>
-<li><a href="#contact"><i class="icon-phone"></i>Contact</a></li>
+<li><a href="https://www.facebook.com/DigitalTrotters"><i class="icon-home"></i>Facebook</a></li>
+<li><a href="https://www.instagram.com/digital_trotters/"><i class="icon-user"></i>Instagram</a></li>
+
+<li><a href="mailto:digitaltrotters@gmail.com"><i class="icon-phone"></i>Contact</a></li>
 </ul>
 </nav>
-  
+
 </header>
 
 <updatefy-widget widget-uuid="8427d86d-aa06-463e-b201-2e8d07f13d73"></updatefy-widget>
    <script type="text/javascript" src="https://updatefy.co/widget.js"></script>
   <script>
 
-  
-  
+
  </body>
 </html>
