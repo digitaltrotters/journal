@@ -6,8 +6,8 @@
  <style>
   body {display: block; margin: 0px;}
   header{font-family:'Arial';width:100%; display:table; background-color:#fff; margin-bottom:50px;   box-shadow: 0px 1px 10px #DCDCDC;}
+#logo{text-decoration:none;float:left; font-size:24px; text-transform:uppercase; color:#DC676C; font-weight:600; padding:15px 15px;}
 
-#logo{text-decoration:none;float:left; font-size:24px; text-transform:uppercase; color:#DC676C; font-weight:600; padding:15px 30px;}
 nav{width:auto; float:right;}
 nav ul{display:table; float:right;}
 nav ul li{float:left;list-style-type:none;}
@@ -16,7 +16,7 @@ nav ul li a{text-decoration:none;color:#DC676C; font-size:16px; padding: 5px 18p
 nav ul li a:hover{color:#000; transition: all 0.5s ease 0s;}
 nav ul li a:hover i{color:#000; transition: all 0.5s ease 0s;}
 nav ul li a i{padding:0px; color:#002e5b; transition: all 0.5s ease 0s;}
-.toggle-menu ul{display:table; width:25px;}
+.toggle-menu ul{display:table; width:25px; list-style-type: none;}
 .toggle-menu ul li{width:100%; height:3px; background-color:#002e5b; margin-bottom:4px;}
 .toggle-menu ul li:last-child{margin-bottom:0px;}
 input[type=checkbox], label{display:none;}
@@ -32,17 +32,18 @@ footer{display:table; padding-bottom:30px; width:100%;}
 section{max-width:95%;}
 }
 @media only screen and (max-width: 980px) {
-header{padding:20px 0px;}
-#logo{padding:0px;}
+header{padding:5px 0px;}
+#logo{padding:20px;}
+.burger img {padding: 50px;float:right;width:8%;}
 input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
 input[type=checkbox]:fous{background:none;}
-label {float:right; padding:8px 0px; display:inline-block; cursor:pointer; }
-input[type=checkbox]:checked ~ nav {display:block;}
-nav{display:none; position:absolute; right:0px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
+label {float:right; padding:8px 0px; display:none; cursor:pointer; }
+input[type=checkbox]:checked ~ nav {display:none;;}
+nav{display:none; position:absolute; right:50px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
 nav ul{width:auto;}
-nav ul li{float:none; padding:0px; width:100%; display:table;}
-nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
-nav ul li a i{color:#fde428; padding-right:13px;}
+nav ul li{float:none; padding:0px; width:100%; display:none;}
+nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:none;}
+nav ul li a i{color:#fde428; padding-right:13px;display: none;}
 }
 @media only screen and (max-width: 980px) {
 .content{width:90%;}
@@ -52,19 +53,17 @@ h1{padding:25px 0px;}
 h1 span{display:block;}
 }
 @media only screen and (max-width: 480px) {
-section {max-width: 90%;}
+section {max-width: 80%;} 
 }
 @media only screen and (max-width: 360px) {
 h1{font-size:20px;}
 label{padding:5px 0px;}
-#logo{font-size: 20px;}
-nav{top:47px;}
+#logo{font-size: 15x;}
+nav{top:27px;}
 }
 @media only screen and (max-width: 320px) {
 h1 {padding: 20px 0px;}
 }
-
-
   </style>
 
 
@@ -74,10 +73,7 @@ h1 {padding: 20px 0px;}
   <header>
 
 <section>
-<a href="#" id="logo" target="_blank">Digital Trotters - Lisbonne</a>
-
-<label for="toggle-1" class="toggle-menu"><ul><li></li> <li></li> <li></li></ul></label>
-<input type="checkbox" id="toggle-1">
+<a href="https://www.facebook.com/DigitalTrotters" id="logo" target="_blank">Digital Trotters - Lisbonne</a>
 
 <nav>
 <ul>
@@ -93,7 +89,5 @@ h1 {padding: 20px 0px;}
 <updatefy-widget widget-uuid="8427d86d-aa06-463e-b201-2e8d07f13d73"></updatefy-widget>
    <script type="text/javascript" src="https://updatefy.co/widget.js"></script>
   <script>
-
-
  </body>
 </html>
